@@ -486,7 +486,7 @@ const REDIRECT_URI = "https://ornate-squirrel-1d8e1e.netlify.app/";             
     localStorage.setItem("pkce_verifier", verifier);
 
     const params = new URLSearchParams({
-      client_id: SPOTIFY_CLIENT_ID,
+      client_id: 3f8e6a4bb49b46838e1d6aa42790d979,
       response_type: "code",
       redirect_uri: REDIRECT_URI,
       code_challenge_method: "S256",
@@ -503,7 +503,7 @@ const REDIRECT_URI = "https://ornate-squirrel-1d8e1e.netlify.app/";             
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        client_id: SPOTIFY_CLIENT_ID,
+        client_id: 3f8e6a4bb49b46838e1d6aa42790d979,
         grant_type: "authorization_code",
         code,
         redirect_uri: REDIRECT_URI,
